@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/steps.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <!--------------------------------------------------------MAin Setion---------------------------------------------->
+    <section>
+        <div class="container-fluid ">
+            <div class="row ">
+                <!---------------------------------------------------------Colloum 1-------------------------------------------->
+                <div class="col-md-2 p-0 overflow-hidden">
+                    <div class="position-custom">
+                        <div class="bg-main h-50 ">
+                            <div class="text-center pt-3">
+                                <img src="images/logo white.png" width="150">
+                            </div>
+                            <hr style="border-top: 2px solid white;">
+                            <div class="text-center mt-1">
+                                <img src="images/profileavatar.png">
+                                <a href="profile.html" style="text-decoration: none;">
+                                    <p class="text-white mt-2">John Doe</p>
+                                </a>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="profile.html" style="text-decoration: none;"> <img src="images/settings.png"
+                                        width="21"></a>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn default1 mt-4 mb-5" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Find Tutor</button>
+                            </div>
+                        </div>
+                        <div class="mt-4 h-50">
+                            <a class="text-decoration-none" href="home.html">
+                                <div class="row hovBg  pt-2 justify-content-center">
+                                    <div class="col-2">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="pt-1 pb-1">Home</h5>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="text-decoration-none" href="coaching.html">
+                                <div class="row hovBg  pt-2 justify-content-center">
+                                    <div class="col-2">
+                                        <i class="far fa-id-card"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="pt-1 pb-1">Coaching</h5>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="text-decoration-none" href="resorces.html">
+                                <div class="row hovBg pt-2 justify-content-center">
+                                    <div class="col-2">
+                                        <i class="fas fa-suitcase"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="pt-1 pb-1 ">My Resources</h5>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="text-decoration-none" href="post.html">
+                                <div class="row hovBg  pt-2 justify-content-center">
+                                    <div class="col-2">
+                                        <i class="far fa-copy"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="pt-1 pb-1">My Posts</h5>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="text-decoration-none" href="dashboard-session.html">
+                                <div class="row hovBg  pt-2 justify-content-center">
+                                    <div class="col-2">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="pt-1 pb-1">Session History</h5>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="text-decoration-none" href="login2.html">
+                                <div class="row hovBg  pt-2 justify-content-center position-custom1">
+                                    <div class="col-2">
+                                        <i class="fas fa-power-off"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="pt-1 pb-1">Logout</h5>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------colloum2------------------------------------------->
+                <div class="col-md-10 bg-light">
+                    <!---------------------------------------------------------------------------------Login detail tab-->
+                    <section>
+                        <div class="container">
+                            <div class="row justify-content-center " style="margin-top: 4rem;">
+                                <div class="col-md-8">
+                                    <div class="text-center">
+                                        <img src="images/profileavataar.png" width="130">
+                                        <div class="image-upload">
+                                            <label for="file-input">
+                                                <img class="img-position pointr" src="images/photo-camera.png"
+                                                    width="30">
+                                            </label>
+
+                                            <input id="file-input" type="file" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form onsubmit="return false">
+                                <div id="1stnormal">
+                                    <div class="row justify-content-center mt-4 ">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput">First Name</label>
+                                                <input type="text" class="form-control input-bg"
+                                                    id="formGroupExampleInput" disabled placeholder="John">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput5">Last Name</label>
+                                                <input type="text" class="form-control input-bg"
+                                                    id="formGroupExampleInput5" disabled  placeholder="Doe">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center ">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput2">Email</label>
+                                                <input type="text" class="form-control input-bg"
+                                                    id="formGroupExampleInput2" disabled  placeholder="johnr@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput3">Password</label> 
+                                                    <input type="password" class="form-control input-bg"
+                                                        id="formGroupExampleInput3" disabled placeholder="*******">
+                                                </div>
+                                        
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <div class="row justify-content-center ">
+                                        <div class="col-md-4">
+                                            <label for="formGroupExampleInput4">Gender</label>
+                                            <select disabled  class="form-control input-bg ">
+                                                <option >Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="formGroupExampleInput8">Role</label>
+                                            <select disabled  class="form-control input-bg">
+                                                <option>teacher</option>
+                                                <option>student</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div id="1stupdate" style="display: none;">
+                                    <div class="row justify-content-center mt-4 ">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput">First Name</label>
+                                                <input type="text" class="form-control input-bg"
+                                                    id="formGroupExampleInput" placeholder="John">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput5">Last Name</label>
+                                                <input type="text" class="form-control input-bg"
+                                                    id="formGroupExampleInput5" placeholder="Doe">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center ">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput2">Email</label>
+                                                <input type="text" class="form-control input-bg"
+                                                   disabled id="formGroupExampleInput2"
+                                                   placeholder="john@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label id="price11" for="formGroupExampleInput3">Password</label>
+                                                <a class="text-decoration-none color-1" style="float:right" href="#" onclick="hideElement()" id="passlink">Change password</a>
+                                                <input type="password" disabled class="form-control input-bg"
+                                                    id="formGroupExampleInput11">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="1stpass" style="display: none;">
+                                        <div class="row justify-content-center ">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput9">New Password</label>
+                                                    <input type="password" class="form-control input-bg"
+                                                        id="formGroupExampleInput3">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput10">Confirm Password</label>
+                                                    <input type="password" class="form-control input-bg"
+                                                        id="formGroupExampleInput7">
+                                                </div>
+                                            </div>
+                                        </div></div>
+                                    
+                                    <!-- <div class="row justify-content-center ">
+                                        <div class="col-md-4">
+                                            <label for="formGroupExampleInput4">Gender</label>
+                                            <select class="form-control input-bg">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="formGroupExampleInput8">Role</label>
+                                            <select class="form-control input-bg">
+                                                <option>teacher</option>
+                                                <option>student</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="row">
+                                    <button id="btn1" class="mt-5 mb-5 btn btn-lg btn-size center-btn"
+                                        onclick=" hideElementZero()">EDIT</button>
+                                        <button id="btn2" class="mt-5 mb-5 btn btn-lg btn-size center-btn"
+                                        onclick=" hideElementZero()" style="display: none;" >UPDATE</button>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </section>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content  w-75 ml-5" style="border-radius: 25px;">
+                <div class="modal-header">
+                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div class=" form-register" action="#" method="post">
+                                    <div id="form-total">
+                                        <!-- SECTION 1 -->
+                                        <h1></h1>
+                                        <section>
+                                            <div class="row justify-content-center mt-4">
+                                                <div class="col-md-12">
+                                                    <h5 class="text-center  text-muted" style="font-size: 16px;">What
+                                                        would you like to be matched with a coach</h5>
+                                                    <div class="form-group mt-3">
+                                                        <textarea class="form-control" id="message-text"
+                                                            style="background-color:#ccc;"> </textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+                                        <!-- SECTION 2 -->
+                                        <h1></h1>
+                                        <section>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-12 mt-3">
+                                                    <h5 class="text-center  text-muted" style="font-size: 16px;">Do you
+                                                        have any experience with public speaking or debate? if so please
+                                                        explain</h5>
+                                                    <div class="form-group mt-3">
+                                                        <textarea class="form-control" id="message-text"
+                                                            style="background-color:#ccc;"> </textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+                                        <!-- SECTION 3 -->
+                                        <h1></h1>
+                                        <section>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-12 mt-4">
+                                                    <h5 class="text-center  text-muted" style="font-size: 16px;">What
+                                                        would you like to be matched with a coach</h5>
+                                                    <div class="form-group mt-3">
+                                                        <textarea class="form-control" id="message-text"
+                                                            style="background-color:#ccc; "
+                                                            placeholder="Enter your Message"> </textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                </div>
+                                <div id="lastmodal" style="display: none;">
+                                    <div class="text-center">
+                                        <img class="mt-1" src="images/tick mark.png">
+                                    </div>
+                                    <h5 class="text-center text-muted mt-4" style="font-size: 16px;">You are almost
+                                        done!</h5>
+                                    <div class="text-center">
+                                        <button class="btn default3 mt-5 mb-4">Select payment plan</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function hideElementZero() {
+            document.getElementById('1stnormal').style.display = 'none';
+            document.getElementById('1stupdate').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+            document.getElementById('btn2').style.display = 'block';
+
+
+        }
+        function hideElement() {
+            document.getElementById('1stpass').style.display = 'block';
+            document.getElementById('passlink').style.display = 'none';
+            document.getElementById('price11').innerHTML = 'Old Password';
+            document.getElementById('formGroupExampleInput11').disabled = false;
+
+      
+
+
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.steps.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#form-total-t-1").click(function () {
+                // alert("The paragraph was clicked.");
+                $("div.actions").children().css('display', "inline-block");
+            });
+
+            $('a[href^="#finish"]').click(function () {
+                $("#form-total").hide();
+                $("#lastmodal").show();
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>forum-details</title>
+  <!-- Custom css styles -->
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+  <!----------------------Nav Bar---------------------------->
+  <section class="nav-section sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- <div class="row"> -->
+        <div class="col-lg-3 col-sm-12 p-0">
+          <a class="navbar-brand" href="index.html">
+            <img class="main-logo" src="images/logo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-lg-9 col-sm-12 p-0">
+          <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="forum.html">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Coaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login2.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html"
+                  style="border: 2px solid #231f20; border-radius: 10px; padding: 3px;">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div> -->
+      </div>
+    </nav>
+  </section>
+  <section class="post-detail-section mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-1">
+          <img class="float-right" src="images/profileavatar.png">
+        </div>
+        <div class="col-md-10">
+          <div class="post-content mt-3">
+            <h5 class="font-weight-bolder">John Doe<span class="ml-3 text-muted"
+                style="font-size: 14px; font-weight: 400;">3 days ago</span></h5>
+            <div class="row">
+              <div class="col-md-4 col-sm-3 mt-2">
+                <img class="drive-img" src="images/drive.png" style="width: 100%;">
+              </div>
+              <div class="col-md-8 drive-para">
+                <h5 class="drive-heading">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h5>
+                <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                  five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+              </div>
+            </div>
+          </div>
+          <div class="options-liking ml-4 mt-2">
+            <div class="row mt-5 mb-3">
+              <img src="images/like.png" style="width: 4%;"><span class="text-muted ml-3 mr-3"
+                style="font-size: 12px">527</span>
+              <img src="images/dislike.png" style="width: 4%;"><span class="text-muted ml-3 mr-3"
+                style="font-size: 12px">23</span>
+              <img src="images/comments.png" style="width: 4%;"><span class="text-muted ml-3 mr-3"
+                style="font-size: 12px">527 Comments</span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-fav" role="progressbar" style="width: 80%" aria-valuenow="15"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-agai" role="progressbar" style="width: 20%" aria-valuenow="30"
+              aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="float-right" src="images/profileavatar.png">
+        </div>
+        <div class="col-md-10 mt-3">
+          <div class="form-group">
+            <textarea class="form-control bg-light" placeholder="Type reply to John Doe..." rows="5"
+              id="comment"></textarea>
+          </div>
+          <button class="btn btn-dark post-comment" data-toggle="modal" data-target="#exampleModalCenterOne">Post
+            comment</button>
+        </div>
+      </div>
+    </div>
+    <div class="row container-fluid w-100 p-0 m-0 mt-5">
+      <div class="col-md-6" style="border-right: 3px solid #60d0ac;">
+        <div class="row">
+          <div class="in-favour-text">In Favour</div>
+          <div class="bg-light w-50 text-right p-3"><img src="images/like.png"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="comments col-md-9 offset-md-2" id="comments">
+              <h3 class="mb-4 mt-5">32 Comments</h3>
+              <!-- comment -->
+              <div class="comment mb-2 row">
+                <div class="comment-avatar col-md-2 col-sm-2 text-center pr-1">
+                  <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                      alt="avatar"></a>
+                </div>
+                <div class="comment-content col-md-10 col-sm-10">
+                  <div class="comment-body mt-2">
+                    <h5>John Doe<span class="text-muted font-weight-normal"> &nbsp; Lorem Ipsum is simply dummy text of
+                        the printing and
+                        typesetting industry.</span></h5>
+                    <span class="text-muted font-like ">3</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                    <a href="#" class="text-decoration-none"> <span class="text-muted font-like ">
+                        &nbsp;Reply</span></a>
+                    <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like "> &nbsp;Hide
+                        replies</span></a>
+                  </div><br>
+                </div>
+
+                <!-- reply is indented -->
+                <div class="comment-reply col-md-10 offset-md-2 col-sm-10 offset-sm-2">
+                  <div class="row">
+                    <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                      <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                          alt="avatar"></a>
+                    </div>
+                    <div class="comment-content col-md-11 col-sm-10 col-12">
+                      <div class="comment-body">
+                        <h5>John Doe
+                          <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</small>
+                        </h5>
+                        <span class="text-muted font-like ">3</span>
+                        <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                        <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                        <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                      </div><br>
+                    </div>
+                  </div>
+                </div>
+                <!-- /reply is indented -->
+
+                <!-- reply is indented -->
+                <div class="comment-reply col-md-10 offset-md-2 col-sm-10 offset-sm-2">
+                  <div class="row">
+                    <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                      <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                          alt="avatar"></a>
+                    </div>
+                    <div class="comment-content col-md-11 col-sm-10 col-12">
+                      <div class="comment-body">
+                        <h5>John Doe
+                          <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</small>
+                        </h5>
+                        <span class="text-muted font-like ">3</span>
+                        <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                        <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                        <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                      </div><br>
+                    </div>
+                  </div>
+                </div>
+                <!-- /reply is indented -->
+
+                <!-- reply is indented -->
+                <div class="comment-reply col-md-10 offset-md-2 col-sm-10 offset-sm-2">
+                  <div class="row">
+                    <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                      <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                          alt="avatar"></a>
+                    </div>
+                    <div class="comment-content col-md-11 col-sm-10 col-12">
+                      <div class="comment-body">
+                        <h5>John Doe
+                          <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. </small>
+                        </h5>
+                        <span class="text-muted font-like ">3</span>
+                        <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                        <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                        <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><br>
+                <!-- /reply is indented -->
+
+              </div>
+              <!-- comment -->
+              <div class="comment mb-2 row">
+                <div class="comment-avatar col-md-2 col-sm-2 text-center pr-1">
+                  <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                      alt="avatar"></a>
+                </div>
+                <div class="comment-content col-md-10 col-sm-10">
+                  <div class="comment-body mt-2">
+                    <h5>John Ddoe
+                      <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.</small>
+                    </h5>
+                    <span class="text-muted font-like ">3</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                    <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                    <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like "> &nbsp;Hide replies</span></a>
+                    <!-- <a href="" class="text-right small">
+                      <i class="ion-reply"></i>Liked Reply </a></p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="bg-light w-50 p-3"><img src="images/dislike.png"></div>
+          <div class="against-text">Against</div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="comments col-md-9 offset-md-2" id="comments">
+              <h3 class="mb-4 mt-5">32 Comments</h3>
+              <!-- comment -->
+              <div class="comment mb-2 row">
+                <div class="comment-avatar col-md-2 col-sm-2 text-center pr-1">
+                  <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                      alt="avatar"></a>
+                </div>
+                <div class="comment-content col-md-10 col-sm-10">
+                  <div class="comment-body mt-2">
+                    <h5>John Doe<span class="text-muted font-weight-normal"> &nbsp; Lorem Ipsum is simply dummy text of
+                        the printing and
+                        typesetting industry.</span></h5>
+                    <span class="text-muted font-like ">3</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                    <a href="#" class="text-decoration-none"> <span class="text-muted font-like ">
+                        &nbsp;Reply</span></a>
+                    <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like "> &nbsp;Hide
+                        replies</span></a>
+                  </div><br>
+                </div>
+
+                <!-- reply is indented -->
+                <div class="comment-reply col-md-10 offset-md-2 col-sm-10 offset-sm-2">
+                  <div class="row">
+                    <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                      <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                          alt="avatar"></a>
+                    </div>
+                    <div class="comment-content col-md-11 col-sm-10 col-12">
+                      <div class="comment-body">
+                        <h5>John Doe
+                          <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</small>
+                        </h5>
+                        <span class="text-muted font-like ">3</span>
+                        <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                        <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                        <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                      </div><br>
+                    </div>
+                  </div>
+                </div>
+                <!-- /reply is indented -->
+
+                <!-- reply is indented -->
+                <div class="comment-reply col-md-10 offset-md-2 col-sm-10 offset-sm-2">
+                  <div class="row">
+                    <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                      <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                          alt="avatar"></a>
+                    </div>
+                    <div class="comment-content col-md-11 col-sm-10 col-12">
+                      <div class="comment-body">
+                        <h5>John Doe
+                          <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</small>
+                        </h5>
+                        <span class="text-muted font-like ">3</span>
+                        <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                        <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                        <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                      </div><br>
+                    </div>
+                  </div>
+                </div>
+                <!-- /reply is indented -->
+
+                <!-- reply is indented -->
+                <div class="comment-reply col-md-10 offset-md-2 col-sm-10 offset-sm-2">
+                  <div class="row">
+                    <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                      <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                          alt="avatar"></a>
+                    </div>
+                    <div class="comment-content col-md-11 col-sm-10 col-12">
+                      <div class="comment-body">
+                        <h5>John Doe
+                          <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. </small>
+                        </h5>
+                        <span class="text-muted font-like ">3</span>
+                    <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                    <a href="#" class="text-decoration-none"> <span class="text-muted font-like "> &nbsp;Reply</span></a>
+                    <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><br>
+                <!-- /reply is indented -->
+
+              </div>
+              <!-- comment -->
+              <div class="comment mb-2 row">
+                <div class="comment-avatar col-md-2 col-sm-2 text-center pr-1">
+                  <a href=""><img class="mx-auto rounded-circle img-fluid" src="images/profileavatar.png"
+                      alt="avatar"></a>
+                </div>
+                <div class="comment-content col-md-10 col-sm-10">
+                  <div class="comment-body mt-2">
+                    <h5>John Doe<span class="text-muted font-weight-normal"> &nbsp; Lorem Ipsum is simply dummy text of
+                      the printing and
+                      typesetting industry.</span></h5>
+                  <span class="text-muted font-like ">3</span>
+                  <a href="#" class="text-decoration-none"><span class="text-muted font-like"> Like</span></a>
+                  <a href="#" class="text-decoration-none"> <span class="text-muted font-like ">
+                      &nbsp;Reply</span></a>
+                  <span class="text-muted font-like "> &nbsp;3 hrs</span>
+                  <a href="#" class="text-decoration-none"><span class="text-muted font-like "> &nbsp;Hide
+                      replies</span></a>
+                    <!-- <a href="" class="text-right small">
+                      <i class="ion-reply"></i>Liked Reply </a></p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--plus button-->
+  <div>
+    <a href="#" class="float-card" style="  text-decoration: none;" data-toggle="modal"
+      data-target="#exampleModalCenter">
+
+      <img class=" my-float" src="images/plus.png" width="60">
+
+    </a>
+  </div>
+  <!-- Modal for start debate -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title ml-auto " id="exampleModalLongTitle">Start Debate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Tips on getting good answer quickly?</h5>
+          <ul style="font-size: 15px;">
+            <li>
+              Make sure your topic hasn’t already been debated on the forum
+            </li>
+            <li class="mt-1">
+              Keep your submission short and to the point
+            </li>
+            <li class="mt-1">
+              Double-check grammar and spelling
+            </li>
+          </ul>
+          <hr style="border-top: 2px solid black;">
+          <img src="images/profileavatar.png" width="40"> <span class="ml-3 font-weight-bold">John Doe</span>
+          <div class="form-group mt-3">
+            <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <img src="images/add_file.png" width="25"><span class="ml-2">please add image relevent to topic</span>
+          <br>
+          <button class="btn btn-dark mt-5">POST QUESTION</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal For pop Up sign in -->
+  <div class="modal fade" id="exampleModalCenterOne" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterOneTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-3" style="width: 80%; margin-left: auto; margin-right:auto; display: block;">
+        <div class="modal-header">
+          <h4 class="modal-title ml-auto" id="exampleModalLongTitle">Sign In</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label class="text-muted h8 font-weight-bolder">Email/Username</label>
+            <input class="form-control bg-light" type="text" name="email" style="height: 2.2rem;">
+            <label class="text-muted h8 font-weight-bold mt-2">Password</label>
+            <input class="form-control bg-light" type="password" name="pass" style="height: 2.2rem;">
+            <button class="btn btn-default-login mt-4">SEND</button>
+            <a href="register.html">
+              <h6 class="text-center mt-2 color-a" style="font-size: 0.8em;">Create a new account?</h6>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="mt-5 mb-5 w-100" style="background-color: #60d0ac; height: 2px;">
+  <footer>
+    <div class="container">
+      <div class="row mb-2 mt-3 ">
+        <div class="col-md-4 mt-3 ">
+          <div>
+            <ul>
+              <li><a href="#" class="text-decoration-none text-dark"><img src="images/livechat.png" width="30"><span
+                    class="link-footer">Live Chat</span></a> </li>
+              <li class="mt-2"><a href="#" class="text-decoration-none text-dark"><img src="images/callus.png"
+                    width="30"><span class="link-footer"> Call Us</span></a> </li>
+              <li class="mt-2"><a href="#" class="text-decoration-none text-dark"><img src="images/email.png"
+                    width="30"><span class="link-footer">Send an Email</span></a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 ">
+          <div class=" text-center margin-footer-icon">
+            <div class="row justify-content-center mb-2">
+              <a href="#"> <img src="images/twitter.png" width="40"></a>
+              <a href="#"><img class="ml-2" src="images/fb.png" width="40"></a>
+              <a href="#"><img class="ml-2" src="images/instagram.png" width="40"></a>
+              <a href="#"><img class="ml-2" src="images/youtube.png" width="40"></a>
+            </div>
+            <h5 class="mb-2 text-center">(888)-1111-111</h5>
+            <h5 class="text-center">contact@talkmaze.com</h5>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2 ">
+          <div class="row container-fluid contact-options-footer">
+            <div class="col-md-4">
+              <div class="text-center">
+                <ul>
+                  <li><a href="index.html" class="text-decoration-none text-dark">Home</li></a>
+                  <li><a href="about-us.html" class="text-decoration-none text-dark">About</li></a>
+                  <li><a href="faqs.html" class="text-decoration-none text-dark">FAQ</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <ul>
+                  <li><a href="forum.html" class="text-decoration-none text-dark">Forum</li></a>
+                  <li><a href="resources.html" class="text-decoration-none text-dark">Resources</li></a>
+                  <li><a href="pricing.html" class="text-decoration-none text-dark">Coaching</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <ul>
+                  <li><a href="partners.html" class="text-decoration-none text-dark">Partner</li></a>
+                  <li><a href="#" class="text-decoration-none text-dark">Shop</li></a>
+                  <li><a href="join_Team.html" class="text-decoration-none text-dark">Jobs</li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!--copyright-->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="text-left text-white">
+              &copy;2019 TalkMaze. All Rights Reserved.
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="text-copy text-white">
+              <a href="#"
+              class="text-decoration-none text-white">Privacy | Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
