@@ -1115,4 +1115,9 @@ form.example input[type=text] {
       .margin-footer-icon{
         margin-right: 0rem !important;
     }
+    .center-link {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        margin-bottom: 1.5rem !important;
+      }
   }
