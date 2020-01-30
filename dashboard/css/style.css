@@ -309,13 +309,13 @@ p{
       }
       .position-custom{
         position: fixed;
-        width: 16.66%;
+        width: 25%;
 
       }
       .position-custom1{
         position: fixed;
          bottom: 0 !important; 
-        width: 17.66%;
+        width: 26%;
       }
      
       .margin-link{

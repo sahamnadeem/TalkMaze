@@ -21,7 +21,7 @@
         <div class="container-fluid ">
             <div class="row">
                 <!---------------------------------------------------------Colloum 1-------------------------------------------->
-                <div class="col-md-2 p-0 overflow-hidden">
+                <div class="col-md-3 p-0 overflow-hidden">
                     <div class="position-custom">
                         <div class="bg-main h-50 ">
                             <div class="text-center pt-3">
@@ -31,19 +31,19 @@
                             <div class="text-center mt-1">
                                 <img src="images/profileavatar.png">
                                 <a href="profile.html" style="text-decoration: none;">
-                                    <p class="text-white mt-2">John Doe</p>
+                                    <p class="text-white mt-2"style="font-size: 16px !important;" >John Doe</p>
                                 </a>
                             </div>
                             <div class="text-center mt-3">
                                 <a href="profile.html" style="text-decoration: none;"> <img src="images/settings.png"
-                                        width="21"></a>
+                                        width="24"></a>
                             </div>
                             <div class="text-center">
                                 <button class="btn default1 mt-4 mb-5" data-toggle="modal"
-                                    data-target="#exampleModalCenter">Find Tutor</button>
+                                    data-target="#exampleModalCenter">Find Coach</button>
                             </div>
                         </div>
-                        <div class="mt-4 h-50">
+                        <div class="mt-4 h-50" style="font-size: 17px !important;">
                             <a class="text-decoration-none" href="home.html">
                                 <div class="row hovBg  pt-2 justify-content-center active-option">
                                     <div class="col-2">
@@ -114,8 +114,8 @@
                     </div>
                 </div>
                 <!-------------------------------------------------------------colloum2------------------------------------------->
-                <div class="col-md-10 bg-light">
-                    <div class="container">
+                <div class="col-md-9 bg-light">
+                    <div class="container-fluid">
                         <div class="row ">
                             <div class="col-md-4">
                                 <h3 class="color-1 mt-3 font-weight-normal">Dashboard</h3>
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                             <!----------------------------notification dropdown-------------------->
-                            <div id="myDropdown" class="dropdown-content dropdown-menu-right bg-white">
+                            <div id="myDropdown" class="dropdown-content dropdown-menu-right bg-white ">
                                 <div class="container" >
                                     <!-- <div class="row  border-b">
                                         <div class="col-6 p-2">
@@ -149,7 +149,9 @@
                                             </div>
                                         </div>
                                     </div> -->
-                                    <div  id="1stmodal"style="height:60vh;" >
+                                    <div id="1stmodal">
+                                    <div   style="height:60vh; width:100%;" class="scroll-f mt-3 mb-3" >
+                                        <div class="container-fluid" >
                                         <div class="row mt-1" >
                                             <div class="col-3">
                                                 <img class="mt-3" src="images/msgpic.png" width="50">
@@ -201,10 +203,15 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="container">
+                       
                         <!--------------------------------------------------------------1st card-------------------------->
                         <div class="row mt-5">
                             <div class="container">
@@ -382,7 +389,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </divlaclass="container-fluid">
+                    >
                 </div>
             </div>
         </div>
@@ -409,7 +417,7 @@
                                             <div class="row justify-content-center mt-4">
                                                 <div class="col-md-12">
                                                     <h5 class="text-center  text-muted" style="font-size: 16px;">What
-                                                        would you like to be matched with a coach</h5>
+                                                        would you like to be matched with a coach?</h5>
                                                     <div class="form-group mt-3">
                                                         <textarea class="form-control" id="message-text"
                                                             style="background-color:#ccc;"> </textarea>
@@ -426,7 +434,7 @@
                                                 <div class="col-md-12 mt-3">
                                                     <h5 class="text-center  text-muted" style="font-size: 16px;">Do you
                                                         have any experience with public speaking or debate? if so please
-                                                        explain</h5>
+                                                        explain.</h5>
                                                     <div class="form-group mt-3">
                                                         <textarea class="form-control" id="message-text"
                                                             style="background-color:#ccc;"> </textarea>
@@ -440,12 +448,12 @@
                                         <section>
                                             <div class="row justify-content-center">
                                                 <div class="col-md-12 mt-4">
-                                                    <h5 class="text-center  text-muted" style="font-size: 16px;">What
-                                                        would you like to be matched with a coach</h5>
-                                                    <div class="form-group mt-3">
-                                                        <textarea class="form-control" id="message-text"
-                                                            style="background-color:#ccc; "
-                                                            placeholder="Enter your Message"> </textarea>
+                                                    <div class="form-group mt-3 mb-5">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                                                            <h5 class="text-center  text-muted" for="exampleCheck1" style="font-size: 16px;">Do you have access to a webcam and mic for coaching sessions?</h5>
+
+                                                          </div>
                                                     </div>
                                                 </div>
 
