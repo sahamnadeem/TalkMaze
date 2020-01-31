@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Gotham';
     src: url('Gotham-Light.eot');
     src: url('Gotham-Light.eot?#iefix') format('embedded-opentype'),
@@ -8,10 +8,10 @@
     font-weight: bold;
     font-style: normal;
 }
-/* -- Pipeline override custom font: body font -- */
+
 .body, .h1--body, .h2--body, .h3--body, .h4--body, .h5--body, .h6--body, p {
     font-family: 'Gotham', sans-serif;
-}
+} */
 /* - end - */
 h6{
     font-size: 0.67em;
@@ -965,6 +965,7 @@ form.example input[type=text] {
       color: white;
       padding: 14px 45px;
      font-size: 14px;
+     border-radius: 10px;
      text-decoration: none !important;
 }
 .btn-form:hover{
@@ -1003,6 +1004,10 @@ form.example input[type=text] {
 }
 .inner4 {
     width: 245px;
+    height: 1px;
+    border-bottom: 2px solid black;
+}.inner5 {
+    width: 180px;
     height: 1px;
     border-bottom: 2px solid black;
 }
@@ -1120,4 +1125,11 @@ form.example input[type=text] {
         justify-content: center !important;
         margin-bottom: 1.5rem !important;
       }
+  }
+  .btn-job{
+      background-color: #60d0ac;
+      color: white;
+      font-weight: 500;
+      border-radius: 10px;
+      padding: 8px 28px;
   }
