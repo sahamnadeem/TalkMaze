@@ -1048,8 +1048,9 @@ form.example input[type=text] {
 
 }
 .card-font{
-    font-size: 0.9em;
+    font-size: 0.9em !;
 }
+
 .main-img{
     position: relative;
      top: 0;
@@ -1105,6 +1106,9 @@ form.example input[type=text] {
   opacity: 02;
   }
   /*slik slider end  */
+  .cust-height{
+    height:475px;
+  }
   @media (max-width: 768px){
     .slick-next:before{
         margin-left: auto !important;
@@ -1124,6 +1128,12 @@ form.example input[type=text] {
         -ms-flex-pack: center !important;
         justify-content: center !important;
         margin-bottom: 1.5rem !important;
+      }
+      .cust-height{
+        height:100%;
+      }
+      .margin-prof-card{
+          margin-left: 1.5rem;
       }
   }
   .btn-job{

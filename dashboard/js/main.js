@@ -9,7 +9,7 @@ $(function(){
         labels: {
             previous : 'ffff',
             next : 'Next Step',
-            finish : 'Confirm',
+            finish : ' YES',
             current : ''
         }
     });
