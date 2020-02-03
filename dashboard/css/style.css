@@ -309,18 +309,19 @@ p{
       }
       .position-custom{
         position: fixed;
-        width: 25%;
+        width: 20%;
 
       }
       .position-custom1{
         position: fixed;
          bottom: 0 !important; 
-        width: 26%;
+        width: 21%;
       }
      
       .margin-link{
         margin-left: 8.5rem;
       }
+ 
       /*******************************side menu**************************/
       
 .sidenav {
@@ -530,11 +531,28 @@ opacity: 02;
     padding-right: 15px;
     padding-left: 15px;
 }
+.col-8dot4,
+.col-sm-8dot4,
+.col-md-8dot4,
+.col-lg-8dot4,
+.col-xl-8dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 .col-2dot4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
+}
+.col-8dot4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%;
 }
 @media (min-width: 540px) {
     .col-sm-2dot4 {
@@ -543,6 +561,12 @@ opacity: 02;
         flex: 0 0 20%;
         max-width: 20%;
     }
+    .col-sm-8dot4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+  }
 }
 @media (min-width: 720px) {
     .col-md-2dot4 {
@@ -550,7 +574,12 @@ opacity: 02;
         -ms-flex: 0 0 20%;
         flex: 0 0 20%;
         max-width: 20%;
-    }
+    } .col-md-8dot4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+  }
 }
 @media (min-width: 960px) {
     .col-lg-2dot4 {
@@ -559,6 +588,12 @@ opacity: 02;
         flex: 0 0 20%;
         max-width: 20%;
     }
+    .col-lg-8dot4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+  }
 }
 @media (min-width: 1140px) {
     .col-xl-2dot4 {
@@ -567,6 +602,12 @@ opacity: 02;
         flex: 0 0 20%;
         max-width: 20%;
     }
+    .col-xl-8dot4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+  }
 }
 
 /* resource page */
