@@ -67,7 +67,7 @@
           <div class=" text-center">
             <h1 class="text-uppercase mt-2">Frequently asked questions</h1>
             <h5 class="text-uppercase mt-4">need more help?</h3>
-            <button type="button" class="btn btn-dark text-uppercase mt-1"> contact us</button>
+            <button type="button" class="btn btn-dark text-uppercase mt-1" data-toggle="modal" data-target="#exampleModalCenterOne"> contact us</button>
 
           </div>
         </div>
@@ -191,6 +191,53 @@
       
     </div>
   </section>
+    <!-- Modal For pop Up sign in -->
+    <div class="modal fade" id="exampleModalCenterOne" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterOneTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content " style=" margin-left: auto; margin-right:auto; display: block;">
+        <div class="modal-header bg-fav ">
+          <h4 class="modal-title ml-auto" id="exampleModalLongTitle">Contact Us</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-md-12">
+              <form>
+                <div class="form-group">
+                  <label  for="exampleInputname" style="font-weight: 500 !important;">Name</label>
+                  <input type="email" class="form-control bg-light" id="exampleInputname" aria-describedby="emailHelp" placeholder="John" style="height: 2.5rem;">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" style="font-weight: 500 !important;">Email address</label>
+                  <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="john@example.com" style="height: 2.5rem;">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" style="font-weight: 500 !important;">Cell No</label>
+                  <input type="text" class="form-control bg-light" id="exampleInputPassword1" placeholder="+921234567890" style="height: 2.5rem;">
+                </div>
+                <div class="form-group">
+                  <label  for="exampleInputname11" style="font-weight: 500 !important;">Company/School Name</label>
+                  <input type="email" class="form-control bg-light" id="exampleInputname11" aria-describedby="emailHelp" placeholder="Enter School Name" style="height: 2.5rem;">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1" style="font-weight: 500 !important;">Description</label>
+                  <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                <button type="submit" class="btn btn-faq-modal">Send</button>
+                <button type="submit" class="btn btn-faq-modal ml-3">Cancel</button>
+
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <hr class="mt-5 mb-5 w-100" style="background-color: #60d0ac; height: 2px;">
   <footer>
     <div class="container">

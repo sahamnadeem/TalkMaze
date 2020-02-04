@@ -1185,3 +1185,9 @@ form.example input[type=text] {
     border-radius: 0 0 50% 50%;
     margin: 0 -65px;
 }
+.btn-faq-modal{
+    color: white;
+    background-color: black;
+    padding: 6px 32px;
+    border-radius: 10px;
+}
