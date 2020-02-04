@@ -927,7 +927,7 @@ form.example input[type=text] {
     width: 100%;
     height: 100%;
     background-color:
-     black;opacity: 0.40;
+     black;opacity: 0.10;
  }
  .overlay-text{
     position: absolute;
